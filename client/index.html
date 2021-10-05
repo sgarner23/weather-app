@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="container">
+   
+    <div class="weather-widget">
+      
+      <h1>Check the Weather <img src="../assets/cloudy.png" class="header-image"></h1>
+    
+      
+        <div class="all-weather-info">
+          <div class="temp-container">
+
+            <div class="temp-child temp-left">
+              <img src="" id="weather-symbol"><h4>--</h4>
+              <div class="degree-container">
+              <p class="degree">&#x2109;</p>
+            </div>
+            </div>
+            <div class="temp-child extra-weather-stats">
+              <aside class="precipitation">Precipitation: -- in</aside>
+             <aside class="humidity">Humidity: --%</aside>
+             <aside class="wind">Wind: -- mph</aside>
+            </div>
+    
+        </div>
+        <div class="form-container">
+        <form>
+          <label for="user-input">Enter a location:  </label>
+          <input type="text" id="user-input" placeholder="City, State                                                       &#x2192;">
+          <small>Please enter your search in this format: City, State</small>
+        </form>
+
+        
+        
+      </div>
+      <div class="recent-searches-container">
+        <select name="recent-searches" id="recent-searches">
+        <option value="" disabled selected hidden >Recent Searches
+      </select>
+      </div>
+      <h2 id="forecast-header">Upcoming Forecast</h2>
+      <div class="forecast-container">
+        
+        <div class="forecast-widgets">
+          <div class="outer-container">
+          <p>Today</p>
+          <img id="today-icon" src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="">
+          <div class="bottom-temp-container">
+            <p id="today-high-temp">81&#xb0;</p>
+            <p class="low-temp" id="today-low-temp">52&#xb0;</p>
+          </div>
+        </div>
+      </div>
+        <div class="forecast-widgets">
+          <div class="outer-container">
+          <p>Tomorrow</p>
+          <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" id="tomorrow-icon">
+          <div class="bottom-temp-container">
+            <p id="tomorrow-high-temp">81&#xb0;</p>
+            
+            <p class="low-temp" id="tomorrow-low-temp">52&#xb0;</p>
+          
+          </div>
+        </div>
+        </div>
+        <div class="forecast-widgets">
+          <div class="outer-container">
+          <p id="third-day-week">Test</p>
+          <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" id="third-day-icon">
+          <div class="bottom-temp-container">
+            <p id="third-high-temp">81&#xb0;</p>
+            <p class="low-temp" id="third-low-temp">52&#xb0;</p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="city-info">
+        <p class="city-display"></p>
+        <p class="smaller-p date" id="time"></p>
+        <p class="smaller-p condition" id="weather-condition"></p>
+      </div>
+
+      
+      </div>
+    </div>
+      
+
+
+     
+    
+  </div>
+  </div>
+  
+  
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
