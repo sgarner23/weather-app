@@ -109,7 +109,7 @@ small {
 }
 
 .all-weather-info {
-  
+  margin-top: 150px;
   height: 800px;
   width: 850px;
   display: flex;
