@@ -12,6 +12,13 @@ This Weather-App is a fullstack web application that allows you to look up weath
 
 ![Screen Shot 2021-10-05 at 8 09 42 PM](https://user-images.githubusercontent.com/89042293/136129682-2d499cd5-a427-4bdc-8d28-990b5fc31df3.png)
 
+![Screen Shot 2021-10-05 at 8 12 01 PM](https://user-images.githubusercontent.com/89042293/136129841-a2a9f47c-9b78-4667-a9e6-5015d6c87faf.png)
+
+### H3 Technologies 
+
+JavaScript, Node.js, HTML/CSS, Moment, Axios, Cors, Interactive Weather API, Express
+
+
 
 
 
