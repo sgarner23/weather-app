@@ -19,14 +19,14 @@ const tomorrowLowTemp = document.getElementById("tomorrow-low-temp");
 const thirdDayHighTemp = document.getElementById("third-high-temp");
 const thirdDayLowTemp = document.getElementById("third-low-temp");
 const thirdDayOf = document.getElementById("third-day-week");
-const forecastHeader = document.getElementById('forecast-header')
-const forecastContainer = document.querySelector('.forecast-container')
-
+const forecastHeader = document.getElementById("forecast-header");
+const forecastContainer = document.querySelector(".forecast-container");
 
 let lastBackgroundClass = "";
 
 //Populating UI from last session
-retrieveLocalStorage();
+// retrieveLocalStorage();
+//This is a comment
 
 //defining all functions
 function populateForecast(today, tomorrow, thirdDay, dayOfWeek) {
@@ -42,8 +42,8 @@ function populateForecast(today, tomorrow, thirdDay, dayOfWeek) {
   thirdDayHighTemp.innerHTML = `<p>${thirdDay.maxTemp}&#xb0;</p>`;
   thirdDayLowTemp.innerHTML = `<p>${thirdDay.minTemp}&#xb0;</p>`;
   thirdDayOf.innerHTML = `<p>${dayOfWeek}</p>`;
-  forecastHeader.style.visibility = 'unset'
-  forecastContainer.style.visibility = 'unset'
+  forecastHeader.style.visibility = "unset";
+  forecastContainer.style.visibility = "unset";
 }
 function showMeTheForecast(city, state) {
   axios
@@ -271,5 +271,5 @@ form.addEventListener("submit", (e) => {
 selectElement.addEventListener("change", (e) => {
   const value = e.target.value.split(",  ");
   hitMyAPI(value[0], value[1]);
-  showMeTheForecast(value[0], value[1])
+  showMeTheForecast(value[0], value[1]);
 });
